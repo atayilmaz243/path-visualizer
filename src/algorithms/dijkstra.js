@@ -143,7 +143,7 @@ export default function dijkstra(gridArray,setArray,setPlay,speedArg,canvasRef)
   const finalPath = [];
   goToStart(end,finalPath,from,start);
   finalPath.unshift(start);
-  console.log(finalPath);
+  // console.log(finalPath);
 
   const timedelay = (path.length-1)*speed+1000;
   finalAnimation(finalPath,gridArray,setArray,setPlay,canvasRef,timedelay,60);

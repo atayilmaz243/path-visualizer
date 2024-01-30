@@ -114,7 +114,7 @@ export default function A_search(gridArray,setArray,setPlay,speedArg,canvasRef)
 
     if (visited.has(`${r}-${c}`))
     {
-      console.log({r:r,c:c});
+      // console.log({r:r,c:c});
       continue;
     }
     visited.add(`${r}-${c}`);
@@ -161,7 +161,7 @@ export default function A_search(gridArray,setArray,setPlay,speedArg,canvasRef)
         from.set(`${r}-${c-1}`,`${r}-${c}`);
     }
   }
-  console.log(path);
+  // console.log(path);
 //   console.log(from);
   // console.log(path);
 
@@ -178,7 +178,7 @@ export default function A_search(gridArray,setArray,setPlay,speedArg,canvasRef)
   const finalPath = [];
   goToStart(end,finalPath,from,start);
   finalPath.unshift(start);
-  console.log(finalPath);
+  // console.log(finalPath);
 
   const timedelay = (path.length-1)*speed+1000;
   finalAnimation(finalPath,gridArray,setArray,setPlay,canvasRef,timedelay,60);

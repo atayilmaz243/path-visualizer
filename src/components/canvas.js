@@ -234,7 +234,6 @@ export function DrawLine(path,tbetween,canvasRef)
 {
     let t = 0;
     const context = canvasRef.current.getContext('2d');
-    console.log(path);
     for (let i=1 ; path.length-1>i ; i++)
     {
         const pr = path[i-1].r;

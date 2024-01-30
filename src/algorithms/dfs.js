@@ -94,7 +94,7 @@ export default function VisualizeDFS(gridArray,setArray,setPlay,speedArg,canvasR
   const end = find(gridArray,2);
   const path = [];
   const moves = [];
-  console.log(end);
+  // console.log(end);
 
   let visited = new Set();
   setPlay(true);
@@ -102,9 +102,9 @@ export default function VisualizeDFS(gridArray,setArray,setPlay,speedArg,canvasR
 
   if (!findable)
   {
-    console.log(moves);
+    // console.log(moves);
     moves.shift();
-    console.log(moves);
+    // console.log(moves);
     notFoundAnimation(moves,gridArray,setArray,setPlay);
     return;
   }

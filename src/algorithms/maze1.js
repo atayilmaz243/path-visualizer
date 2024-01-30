@@ -93,8 +93,8 @@ export function GenenerateMaze(gridArray,setArray,setPlay)
 
     const start = find(gridArray,1);
     const end = find(gridArray,2);
-    console.log(start);
-    console.log(end);
+    // console.log(start);
+    // console.log(end);
 
     const cpyArray = [];
     for (let r=0 ; r_size>r ; r++)
